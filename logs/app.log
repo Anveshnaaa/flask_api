@@ -36,3 +36,170 @@
 2025-11-06 17:33:37,390 INFO 127.0.0.1 - - [06/Nov/2025 17:33:37] "[33mPUT /characters/ID_HERE HTTP/1.1[0m" 404 -
 2025-11-06 17:33:56,147 INFO 127.0.0.1 - - [06/Nov/2025 17:33:56] "[33mPUT /characters/6 HTTP/1.1[0m" 404 -
 2025-11-06 17:34:12,201 INFO 127.0.0.1 - - [06/Nov/2025 17:34:12] "PUT /characters/7 HTTP/1.1" 200 -
+2025-11-06 21:30:12,039 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-06 21:30:12,040 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 21:31:11,908 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+2025-11-06 21:31:11,909 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 21:33:34,960 INFO 127.0.0.1 - - [06/Nov/2025 21:33:34] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 21:36:18,963 INFO 127.0.0.1 - - [06/Nov/2025 21:36:18] "GET /characters?page=2&per_page=3 HTTP/1.1" 200 -
+2025-11-06 21:37:20,232 INFO 127.0.0.1 - - [06/Nov/2025 21:37:20] "GET /characters/search?first_name=pho HTTP/1.1" 200 -
+2025-11-06 21:37:43,071 INFO 127.0.0.1 - - [06/Nov/2025 21:37:43] "GET /characters/search?first_name=pho' HTTP/1.1" 200 -
+2025-11-06 21:37:53,504 INFO 127.0.0.1 - - [06/Nov/2025 21:37:53] "GET /characters/search?last_name=geller HTTP/1.1" 200 -
+2025-11-06 21:38:06,842 INFO 127.0.0.1 - - [06/Nov/2025 21:38:06] "GET /characters/search?first_name=pho HTTP/1.1" 200 -
+2025-11-06 21:38:25,445 INFO 127.0.0.1 - - [06/Nov/2025 21:38:25] "GET /characters/search?last_name=geller HTTP/1.1" 200 -
+2025-11-06 21:38:40,536 INFO 127.0.0.1 - - [06/Nov/2025 21:38:40] "[31m[1mGET /characters/search HTTP/1.1[0m" 400 -
+2025-11-06 21:40:10,955 INFO 127.0.0.1 - - [06/Nov/2025 21:40:10] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 21:45:16,183 INFO 127.0.0.1 - - [06/Nov/2025 21:45:16] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 21:51:04,178 INFO 127.0.0.1 - - [06/Nov/2025 21:51:04] "PUT /characters/3 HTTP/1.1" 200 -
+2025-11-06 21:51:26,409 INFO 127.0.0.1 - - [06/Nov/2025 21:51:26] "[31m[1mGET /characters/3 HTTP/1.1[0m" 405 -
+2025-11-06 21:52:23,966 INFO 127.0.0.1 - - [06/Nov/2025 21:52:23] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 21:54:14,993 INFO 127.0.0.1 - - [06/Nov/2025 21:54:14] "PUT /characters/3 HTTP/1.1" 200 -
+2025-11-06 21:55:26,137 INFO 127.0.0.1 - - [06/Nov/2025 21:55:26] "DELETE /characters/6 HTTP/1.1" 200 -
+2025-11-06 21:55:52,407 INFO 127.0.0.1 - - [06/Nov/2025 21:55:52] "GET /characters?page=1&per_page=100 HTTP/1.1" 200 -
+2025-11-06 21:56:14,769 INFO 127.0.0.1 - - [06/Nov/2025 21:56:14] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 21:59:11,694 INFO 127.0.0.1 - - [06/Nov/2025 21:59:11] "[31m[1mGET /characters/search HTTP/1.1[0m" 400 -
+2025-11-06 21:59:38,123 ERROR Error in GET /characters
+Traceback (most recent call last):
+  File "/Users/anveshna/Desktop/today/friends_api/app.py", line 87, in list_characters
+ValueError: invalid literal for int() with base 10: 'abc'
+2025-11-06 21:59:38,157 INFO 127.0.0.1 - - [06/Nov/2025 21:59:38] "[35m[1mGET /characters?page=abc&per_page=10 HTTP/1.1[0m" 500 -
+2025-11-06 22:06:07,322 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5004
+2025-11-06 22:06:07,322 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:11:29,124 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-11-06 22:11:29,124 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:14:33,159 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-11-06 22:14:33,159 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:15:03,186 INFO 127.0.0.1 - - [06/Nov/2025 22:15:03] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:17:45,317 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5005
+2025-11-06 22:17:45,318 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:18:55,088 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-11-06 22:18:55,089 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:20:47,720 INFO GET /characters -> 200
+2025-11-06 22:20:47,723 INFO 127.0.0.1 - - [06/Nov/2025 22:20:47] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:21:15,946 INFO GET /characters -> 200
+2025-11-06 22:21:15,947 INFO 127.0.0.1 - - [06/Nov/2025 22:21:15] "GET /characters?page=2&per_page=3 HTTP/1.1" 200 -
+2025-11-06 22:21:27,057 INFO GET /characters -> 200
+2025-11-06 22:21:27,059 INFO 127.0.0.1 - - [06/Nov/2025 22:21:27] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:23:33,411 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-06 22:23:33,412 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:23:59,506 INFO GET /characters -> 200
+2025-11-06 22:23:59,507 INFO 127.0.0.1 - - [06/Nov/2025 22:23:59] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:24:15,555 INFO GET /characters -> 200
+2025-11-06 22:24:15,555 INFO 127.0.0.1 - - [06/Nov/2025 22:24:15] "GET /characters?page=2&per_page=3 HTTP/1.1" 200 -
+2025-11-06 22:24:29,988 INFO GET /characters -> 200
+2025-11-06 22:24:29,988 INFO 127.0.0.1 - - [06/Nov/2025 22:24:29] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 22:24:36,183 INFO GET /characters -> 200
+2025-11-06 22:24:36,183 INFO 127.0.0.1 - - [06/Nov/2025 22:24:36] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 22:24:40,380 INFO GET /characters -> 200
+2025-11-06 22:24:40,380 INFO 127.0.0.1 - - [06/Nov/2025 22:24:40] "GET /characters?page=1&per_page=1 HTTP/1.1" 200 -
+2025-11-06 22:29:10,286 INFO GET /characters -> 200
+2025-11-06 22:29:10,289 INFO 127.0.0.1 - - [06/Nov/2025 22:29:10] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:29:25,575 INFO GET /characters -> 200
+2025-11-06 22:29:25,578 INFO 127.0.0.1 - - [06/Nov/2025 22:29:25] "GET /characters?page=2&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:29:42,224 INFO GET /characters -> 200
+2025-11-06 22:29:42,225 INFO 127.0.0.1 - - [06/Nov/2025 22:29:42] "GET /characters?page=1&per_page=1 HTTP/1.1" 200 -
+2025-11-06 22:30:18,635 INFO GET /characters/search -> 200
+2025-11-06 22:30:18,637 INFO 127.0.0.1 - - [06/Nov/2025 22:30:18] "GET /characters/search?first_name=pho HTTP/1.1" 200 -
+2025-11-06 22:30:32,717 INFO GET /characters/search -> 200
+2025-11-06 22:30:32,718 INFO 127.0.0.1 - - [06/Nov/2025 22:30:32] "GET /characters/search?first_name=geller HTTP/1.1" 200 -
+2025-11-06 22:30:52,283 INFO GET /characters/search -> 200
+2025-11-06 22:30:52,284 INFO 127.0.0.1 - - [06/Nov/2025 22:30:52] "GET /characters/search?last_name=geller HTTP/1.1" 200 -
+2025-11-06 22:32:27,367 INFO GET /characters -> 200
+2025-11-06 22:32:27,370 INFO 127.0.0.1 - - [06/Nov/2025 22:32:27] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:32:48,767 INFO GET /characters -> 200
+2025-11-06 22:32:48,771 INFO 127.0.0.1 - - [06/Nov/2025 22:32:48] "GET /characters?page=2&per_page=3 HTTP/1.1" 200 -
+2025-11-06 22:33:03,570 INFO GET /characters -> 200
+2025-11-06 22:33:03,571 INFO 127.0.0.1 - - [06/Nov/2025 22:33:03] "GET /characters?page=1&per_page=1 HTTP/1.1" 200 -
+2025-11-06 22:33:07,707 INFO GET /characters -> 200
+2025-11-06 22:33:07,708 INFO 127.0.0.1 - - [06/Nov/2025 22:33:07] "GET /characters?page=1&per_page=5 HTTP/1.1" 200 -
+2025-11-06 22:33:39,257 INFO GET /characters/search -> 200
+2025-11-06 22:33:39,258 INFO 127.0.0.1 - - [06/Nov/2025 22:33:39] "GET /characters/search?first_name=pho HTTP/1.1" 200 -
+2025-11-06 22:34:02,411 INFO GET /characters/search -> 200
+2025-11-06 22:34:02,412 INFO 127.0.0.1 - - [06/Nov/2025 22:34:02] "GET /characters/search?last_name=geller HTTP/1.1" 200 -
+2025-11-06 22:34:37,341 INFO PUT /characters/3 -> 200
+2025-11-06 22:34:37,342 INFO 127.0.0.1 - - [06/Nov/2025 22:34:37] "PUT /characters/3 HTTP/1.1" 200 -
+2025-11-06 22:35:08,567 INFO GET /characters -> 200
+2025-11-06 22:35:08,571 INFO 127.0.0.1 - - [06/Nov/2025 22:35:08] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 22:35:48,189 INFO DELETE /characters/6 -> 204
+2025-11-06 22:35:48,201 INFO 127.0.0.1 - - [06/Nov/2025 22:35:48] "[35m[1mDELETE /characters/6 HTTP/1.1[0m" 204 -
+2025-11-06 22:36:02,673 INFO GET /characters -> 200
+2025-11-06 22:36:02,674 INFO 127.0.0.1 - - [06/Nov/2025 22:36:02] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 22:36:20,440 INFO GET /characters/search -> 400
+2025-11-06 22:36:20,442 INFO 127.0.0.1 - - [06/Nov/2025 22:36:20] "[31m[1mGET /characters/search HTTP/1.1[0m" 400 -
+2025-11-06 22:36:35,414 ERROR GET /characters failed
+Traceback (most recent call last):
+  File "/Users/anveshna/Desktop/today/friends_api/app.py", line 37, in parse_pagination
+    page = int(request.args.get("page", 1))
+ValueError: invalid literal for int() with base 10: 'abc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anveshna/Desktop/today/friends_api/app.py", line 66, in list_characters
+    page, per_page = parse_pagination()
+                     ~~~~~~~~~~~~~~~~^^
+  File "/Users/anveshna/Desktop/today/friends_api/app.py", line 40, in parse_pagination
+    raise BadRequest("page and per_page must be integers.")
+werkzeug.exceptions.BadRequest: 400 Bad Request: page and per_page must be integers.
+2025-11-06 22:36:35,429 INFO GET /characters -> 500
+2025-11-06 22:36:35,429 INFO 127.0.0.1 - - [06/Nov/2025 22:36:35] "[35m[1mGET /characters?page=abc&per_page=10 HTTP/1.1[0m" 500 -
+2025-11-06 22:51:58,937 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5006
+2025-11-06 22:51:58,938 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 22:52:16,951 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-06 22:52:16,951 INFO [33mPress CTRL+C to quit[0m
+2025-11-06 23:00:18,310 INFO GET /characters -> 200
+2025-11-06 23:00:18,315 INFO 127.0.0.1 - - [06/Nov/2025 23:00:18] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 23:00:27,810 INFO GET /characters -> 200
+2025-11-06 23:00:27,811 INFO 127.0.0.1 - - [06/Nov/2025 23:00:27] "GET /characters?page=1&per_page=1 HTTP/1.1" 200 -
+2025-11-06 23:00:46,133 INFO GET /characters -> 200
+2025-11-06 23:00:46,139 INFO 127.0.0.1 - - [06/Nov/2025 23:00:46] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 23:01:11,573 INFO GET /characters/search -> 200
+2025-11-06 23:01:11,574 INFO 127.0.0.1 - - [06/Nov/2025 23:01:11] "GET /characters/search?first_name=phoebe HTTP/1.1" 200 -
+2025-11-06 23:01:38,113 INFO GET /characters/search -> 200
+2025-11-06 23:01:38,114 INFO 127.0.0.1 - - [06/Nov/2025 23:01:38] "GET /characters/search?first_name=Phoebe HTTP/1.1" 200 -
+2025-11-06 23:01:46,662 INFO GET /characters/search -> 200
+2025-11-06 23:01:46,663 INFO 127.0.0.1 - - [06/Nov/2025 23:01:46] "GET /characters/search?first_name=Rachel HTTP/1.1" 200 -
+2025-11-06 23:07:07,563 INFO GET /characters -> 200
+2025-11-06 23:07:07,564 INFO 127.0.0.1 - - [06/Nov/2025 23:07:07] "GET /characters?page=1&per_page=2 HTTP/1.1" 200 -
+2025-11-06 23:07:22,587 INFO GET /characters -> 200
+2025-11-06 23:07:22,591 INFO 127.0.0.1 - - [06/Nov/2025 23:07:22] "GET /characters?page=1&per_page=2 HTTP/1.1" 200 -
+2025-11-06 23:07:56,472 INFO GET /characters/search -> 200
+2025-11-06 23:07:56,472 INFO 127.0.0.1 - - [06/Nov/2025 23:07:56] "GET /characters/search?first_name=rachel HTTP/1.1" 200 -
+2025-11-06 23:08:22,593 INFO GET /characters/search -> 200
+2025-11-06 23:08:22,594 INFO 127.0.0.1 - - [06/Nov/2025 23:08:22] "GET /characters/search?first_name=rachel HTTP/1.1" 200 -
+2025-11-06 23:08:30,439 INFO GET /characters/search -> 200
+2025-11-06 23:08:30,440 INFO 127.0.0.1 - - [06/Nov/2025 23:08:30] "GET /characters/search?first_name=Ross HTTP/1.1" 200 -
+2025-11-06 23:08:40,764 INFO GET /characters/search -> 200
+2025-11-06 23:08:40,765 INFO 127.0.0.1 - - [06/Nov/2025 23:08:40] "GET /characters/search?last_name=Geller HTTP/1.1" 200 -
+2025-11-06 23:14:29,875 INFO GET /characters -> 200
+2025-11-06 23:14:29,877 INFO 127.0.0.1 - - [06/Nov/2025 23:14:29] "GET /characters?page=1&per_page=10 HTTP/1.1" 200 -
+2025-11-06 23:14:36,294 INFO GET /characters -> 200
+2025-11-06 23:14:36,294 INFO 127.0.0.1 - - [06/Nov/2025 23:14:36] "GET /characters?page=1&per_page=1 HTTP/1.1" 200 -
+2025-11-06 23:15:18,393 INFO GET /characters/search -> 200
+2025-11-06 23:15:18,394 INFO 127.0.0.1 - - [06/Nov/2025 23:15:18] "GET /characters/search?first_name=Rachel HTTP/1.1" 200 -
+2025-11-06 23:15:33,821 INFO GET /characters/search -> 200
+2025-11-06 23:15:33,822 INFO 127.0.0.1 - - [06/Nov/2025 23:15:33] "GET /characters/search?first_name=rachel HTTP/1.1" 200 -
+2025-11-06 23:15:47,876 INFO GET /characters/search -> 200
+2025-11-06 23:15:47,876 INFO 127.0.0.1 - - [06/Nov/2025 23:15:47] "GET /characters/search?last_name=Geller HTTP/1.1" 200 -
+2025-11-06 23:16:32,125 INFO GET /characters -> 200
+2025-11-06 23:16:32,126 INFO 127.0.0.1 - - [06/Nov/2025 23:16:32] "GET /characters?page=1&per_page=3 HTTP/1.1" 200 -
+2025-11-06 23:16:53,852 INFO PUT /characters/3 -> 200
+2025-11-06 23:16:53,853 INFO 127.0.0.1 - - [06/Nov/2025 23:16:53] "PUT /characters/3 HTTP/1.1" 200 -
+2025-11-06 23:17:00,668 INFO GET /characters -> 200
+2025-11-06 23:17:00,668 INFO 127.0.0.1 - - [06/Nov/2025 23:17:00] "GET /characters?page=1&per_page=3 HTTP/1.1" 200 -
+2025-11-06 23:17:23,692 INFO DELETE /characters/2 -> 204
+2025-11-06 23:17:23,693 INFO 127.0.0.1 - - [06/Nov/2025 23:17:23] "[35m[1mDELETE /characters/2 HTTP/1.1[0m" 204 -
+2025-11-06 23:17:28,207 INFO GET /characters -> 200
+2025-11-06 23:17:28,208 INFO 127.0.0.1 - - [06/Nov/2025 23:17:28] "GET /characters?page=1&per_page=3 HTTP/1.1" 200 -
+2025-11-06 23:17:49,811 INFO GET /characters/search -> 400
+2025-11-06 23:17:49,812 INFO 127.0.0.1 - - [06/Nov/2025 23:17:49] "[31m[1mGET /characters/search HTTP/1.1[0m" 400 -
