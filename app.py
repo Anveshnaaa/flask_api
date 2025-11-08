@@ -60,6 +60,14 @@ def log_request(response):
     return response
 
 # Routes 
+@app.get("/")
+def home():
+    try:
+        return jsonify({"home": "It works, ready to check endpoints"}), 200
+    except:
+        logger.exception("GET / failed")
+        return jsonify({"error": "Internal server error"}), 500
+
 @app.get("/characters")
 def list_characters():
     try:
@@ -67,9 +75,12 @@ def list_characters():
         df = load_csv()
         items, meta = paginate(df, page, per_page)
         return jsonify({"data": items, "meta": meta}), 200
+    
     except Exception:
         logger.exception("GET /characters failed")
         return jsonify({"error": "Internal server error"}), 500
+    
+
 
 @app.get("/characters/search")
 def search_characters():

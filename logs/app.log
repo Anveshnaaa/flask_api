@@ -203,3 +203,10 @@ werkzeug.exceptions.BadRequest: 400 Bad Request: page and per_page must be integ
 2025-11-06 23:17:28,208 INFO 127.0.0.1 - - [06/Nov/2025 23:17:28] "GET /characters?page=1&per_page=3 HTTP/1.1" 200 -
 2025-11-06 23:17:49,811 INFO GET /characters/search -> 400
 2025-11-06 23:17:49,812 INFO 127.0.0.1 - - [06/Nov/2025 23:17:49] "[31m[1mGET /characters/search HTTP/1.1[0m" 400 -
+2025-11-08 16:02:26,368 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-11-08 16:02:26,369 INFO [33mPress CTRL+C to quit[0m
+2025-11-08 16:03:56,106 INFO GET / -> 200
+2025-11-08 16:03:56,109 INFO 127.0.0.1 - - [08/Nov/2025 16:03:56] "GET / HTTP/1.1" 200 -
+2025-11-08 16:06:06,551 INFO GET /characters -> 200
+2025-11-08 16:06:06,552 INFO 127.0.0.1 - - [08/Nov/2025 16:06:06] "GET /characters?page=1&per_page=2 HTTP/1.1" 200 -
