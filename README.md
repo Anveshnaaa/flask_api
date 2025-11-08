@@ -1,19 +1,25 @@
-1. Clone this repository
+**1. Clone this repository**<br>
+
 git clone https://github.com/Anveshnaa/flask_api.git
 
-2. Create and activate a virtual environment
+**2. Create and activate a virtual environment**<br>
 
-macOS / Linux
+-macOS / Linux
 python3 -m venv .venv
 source .venv/bin/activate
 
-Windows
+-Windows
 python -m venv .venv
 .venv\Scripts\activate
 
+**3. Install Dependencies**<br>
 
-3. Install Dependencies
-pip install -r friends_api/requirements.txt
+pip install -r requirements.txt
+
+**4. Run Application**<br>
+
+python app.py
+
 
 
 
